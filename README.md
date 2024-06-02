@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Este projeto é um jogo de ping pong desenvolvido para reforçar a lógica de programação utilizando HTML, CSS, JavaScript e a biblioteca Canvas do JavaScript. O objetivo é criar um jogo interativo onde dois jogadores podem controlar as raquetes para rebater a bola, marcando pontos ao passar a bola pela raquete adversária.
+Este projeto é um jogo de ping pong desenvolvido para reforçar a lógica de programação utilizando HTML, CSS, JavaScript ,a biblioteca Canvas do JavaScript e tambem a biblioteca Request Animation Frame. O objetivo é criar um jogo interativo onde dois jogadores podem controlar as raquetes para rebater a bola, marcando pontos ao passar a bola pela raquete adversária.
 
 ## Funcionalidades
 
