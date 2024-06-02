@@ -33,6 +33,7 @@
             drawCenterLine();
             drawRackets();
             drawBall();
+            drawGameScore();
         }
 
         function drawField()
@@ -83,6 +84,24 @@
             context_canvas.beginPath();
             context_canvas.arc(200,300,20,0,2*Math.PI,false);
             context_canvas.fill();
+        }
+
+        function drawGameScore()
+        {
+            context_canvas.font = "bold 72px Arial";
+            context_canvas.textAlign = "center";
+            context_canvas.textBaseline = "top";
+            context_canvas.fillStyle = "#01341D";
+            context_canvas.fillText(
+                '0', 
+                window.innerWidth / 4,
+                50,
+            );
+            context_canvas.fillText(
+                '0', 
+                window.innerWidth / 4 + window.innerWidth/2,
+                50,
+            );
         }
 
         setup();
