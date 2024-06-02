@@ -32,6 +32,7 @@
             drawField();
             drawCenterLine();
             drawRackets();
+            drawBall();
         }
 
         function drawField()
@@ -75,6 +76,13 @@
             const y = 400;
 
             context_canvas.fillRect(x,y,line_width,line_heigth);  
+        }
+
+        function drawBall()
+        {
+            context_canvas.beginPath();
+            context_canvas.arc(200,300,20,0,2*Math.PI,false);
+            context_canvas.fill();
         }
 
         setup();
