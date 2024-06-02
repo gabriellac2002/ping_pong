@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ping-Pong</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-    <h1>Ping-Pong</h1>
+    <canvas></canvas>
+    <script>
+        const elemento_canvas = document.querySelector("canvas");
+        const context_canvas = elemento_canvas.getContext("2d");    
+
+        function setup()
+        {
+            elemento_canvas.width = window.innerWidth;
+            elemento_canvas.height = window.innerHeight;
+
+            context_canvas.width = window.innerWidth;
+            context_canvas.height = window.innerHeight;
+        }
+
+        function draw()
+        {
+            context_canvas.fillStyle = "#286047";
+            context_canvas.fillRect(0,0,window.innerWidth,window.innerHeight);  
+        }
+
+        setup();
+        draw();
+    </script>
 </body>
 </html>
