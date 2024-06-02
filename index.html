@@ -29,8 +29,52 @@
 
         function draw()
         {
+            drawField();
+            drawCenterLine();
+            drawRackets();
+        }
+
+        function drawField()
+        {
             context_canvas.fillStyle = "#286047";
-            context_canvas.fillRect(0,0,window.innerWidth,window.innerHeight);  
+            context_canvas.fillRect(0,0,window.innerWidth,window.innerHeight);    
+        }
+
+        function drawCenterLine()
+        {
+            const line_width = 15;
+            const x = window.innerWidth/2 - line_width/2;
+            const y = 0;
+            const line_heigth = window.innerHeight;
+
+            context_canvas.fillStyle = "#ffffff";
+            context_canvas.fillRect(x,y,line_width,line_heigth);  
+        }
+
+        function drawRackets()
+        {
+            drawLeftRacket();
+            drawRightRacket();
+        }
+
+        function drawLeftRacket()
+        {
+            const x = 10;
+            const y = 400;
+            const line_width = 15;
+            const line_heigth = 200;
+
+            context_canvas.fillRect(x,y,line_width,line_heigth);  
+        }
+
+        function drawRightRacket()
+        {
+            const line_width = 15;
+            const line_heigth = 200;
+            const x = window.innerWidth - line_width - 10;
+            const y = 400;
+
+            context_canvas.fillRect(x,y,line_width,line_heigth);  
         }
 
         setup();
